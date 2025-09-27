@@ -7,8 +7,8 @@ GLOBAL STYLES
     --font-family-secondary: 'Roboto', sans-serif;
 
     --color-primary: #333;
-    --color-accent: #f38181; /* Reddish pink for hovers/lines */
-    --color-secondary-accent: #95e1d3; /* Teal for subscribe button */
+    --color-accent: #f38181; 
+    --color-secondary-accent: #95e1d3; 
     --color-gray: #f8f8f8;
     --color-light-gray: #e5e5e5;
     --color-text-gray: #999;
@@ -43,9 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 HEADER
 --------------------------------*/
 .header {
-    /* ВИПРАВЛЕНО: Прибрані зайві властивості (position, top, left, right, z-index) */
-    /* та змінено padding */
-    padding: 30px 0;
+    padding: 68px 0;
 }
 
 .header-container {
@@ -55,7 +53,7 @@ HEADER
 }
 
 .header-logo {
-    font-family: var(--font-family-accent);
+    font-family: var(--font-family-base);
     font-size: 30px;
     font-weight: 700;
     color: var(--color-secondary-accent);
@@ -75,7 +73,7 @@ HEADER
 }
 
 .header-item {
-    margin-left: 50px;
+    margin-left: 55px;
 }
 
 .header-link {
@@ -117,14 +115,11 @@ HEADER
 SECTION
 --------------------------------*/
 
-/* ВИДАЛЕНО: Загальний клас .section та .section--gray видалені, */
-/* оскільки тепер кожна секція має унікальний клас та відступи. */
-
 .section-intro {
     font-family: var(--font-family-accent);
-    font-size: 24px;
+    font-size: 20px;
     color: var(--color-primary);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -134,8 +129,8 @@ SECTION
     color: var(--color-primary);
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
+    padding-bottom: 40px;
+    margin-bottom: 65px;
     text-align: center;
 }
 
@@ -143,7 +138,7 @@ SECTION
     content: "";
     display: block;
     width: 60px;
-    height: 3px;
+    height: 4px;
     background-color: var(--color-accent);
     position: absolute;
     bottom: 0;
@@ -164,14 +159,13 @@ SECTION
 SERVICES
 --------------------------------*/
 .services {
-    /* ДОДАНО: Унікальний клас для першої секції з її відступами */
-    padding: 90px 0;
+    padding: 100px 0;
 }
 
 .services-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 80px 40px;
+    gap: 105px 70px;
     list-style: none;
     padding: 0;
     margin-top: 80px;
@@ -183,7 +177,7 @@ SERVICES
 }
 
 .services-item-icon {
-    margin-right: 25px;
+    margin-right: 20px;
     flex-shrink: 0;
 }
 
@@ -203,7 +197,6 @@ SERVICES
 TEAM
 --------------------------------*/
 .team {
-    /* ДОДАНО: Унікальний клас для другої секції з її відступами (і без фону) */
     padding: 100px 0;
 }
 
@@ -214,14 +207,14 @@ TEAM
     list-style: none;
     padding: 0;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 27px;
 }
 
 .team-image {
     display: block;
     max-width: 100%;
     height: auto;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .team-name {
@@ -245,8 +238,7 @@ FOOTER
 --------------------------------*/
 .footer {
     border-top: 1px solid var(--color-light-gray);
-    /* ВИПРАВЛЕНО: Відступ змінено з 20px на 60px */
-    padding: 60px 0;
+    padding: 10px 0;
 }
 
 .footer-container {
