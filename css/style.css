@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 HEADER
 --------------------------------*/
 .header {
-    padding: 68px 0;
+    padding: 17px 0 68px;
 }
 
 .header-container {
@@ -159,7 +159,7 @@ SECTION
 SERVICES
 --------------------------------*/
 .services {
-    padding: 100px 0;
+    padding: 68px 0 100px;
 }
 
 .services-list {
@@ -168,7 +168,7 @@ SERVICES
     gap: 105px 70px;
     list-style: none;
     padding: 0;
-    margin-top: 65px;
+    margin-top: 55px;
 }
 
 .services-item {
@@ -197,7 +197,7 @@ SERVICES
 TEAM
 --------------------------------*/
 .team {
-    padding: 100px 0;
+    padding: 100px 0 80px;
 }
 
 .team-list {
