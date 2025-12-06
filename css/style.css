@@ -36,14 +36,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 15px; 
 }
 
 /*--------------------------------
 HEADER
 --------------------------------*/
 .header {
-    padding: 17px 0 68px;
+    padding: 17px 0 200px; 
 }
 
 .header-container {
@@ -119,7 +119,8 @@ SECTION
     font-family: var(--font-family-accent);
     font-size: 20px;
     color: var(--color-primary);
-    margin-bottom: 20px;
+    padding: 65px;
+    margin-bottom: 65px;
     text-align: center;
 }
 
@@ -159,13 +160,13 @@ SECTION
 SERVICES
 --------------------------------*/
 .services {
-    padding: 68px 0 100px;
+    padding: 200px 0 100px; 
 }
 
 .services-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 105px 70px;
+    gap: 103px 70px;
     list-style: none;
     padding: 0;
     margin-top: 55px;
@@ -177,6 +178,9 @@ SERVICES
 }
 
 .services-item-icon {
+    width: 32px; 
+    height: 32px; 
+    object-fit: contain; 
     margin-right: 20px;
     flex-shrink: 0;
 }
@@ -197,7 +201,7 @@ SERVICES
 TEAM
 --------------------------------*/
 .team {
-    padding: 100px 0 80px;
+    padding: 100px 0 80px; 
 }
 
 .team-list {
@@ -214,7 +218,9 @@ TEAM
     display: block;
     max-width: 100%;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
+    width: 380px;
+    height: 470px;
 }
 
 .team-name {
@@ -237,7 +243,6 @@ TEAM
 FOOTER
 --------------------------------*/
 .footer {
-    border-top: 1px solid var(--color-light-gray);
     padding: 10px 0;
 }
 
@@ -245,6 +250,7 @@ FOOTER
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 1px solid var(--color-light-gray); 
 }
 
 .footer-copyright {
@@ -268,11 +274,11 @@ FOOTER
 .footer-input {
     border: 1px solid var(--color-light-gray);
     border-right: none;
-    padding: 10px;
+    padding: 10px; 
     font-family: var(--font-family-secondary);
     font-style: italic;
     color: var(--color-text-gray);
-    width: 230px;
+    width: 230px; 
 }
 
 .footer-input::placeholder {
@@ -287,7 +293,7 @@ FOOTER
     font-weight: 700;
     text-transform: uppercase;
     font-size: 14px;
-    padding: 10px 30px;
+    padding: 10px 30px; /* Змініть 10px та 30px на потрібні відступи */
     cursor: pointer;
     transition: background-color .2s linear;
 }
