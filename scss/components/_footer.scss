@@ -1,0 +1,55 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+@use '../utils/fonts' as *;
+
+.footer {
+	padding-bottom: 10px;
+
+	&__container {
+		padding-top: 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-top: 1px solid $paragraph-color;
+	}
+
+	&__description {
+		@extend %footer-text;
+		color: $footer-description-color;
+	}
+
+	&__link {
+		color: $hover-text-color;
+		font-size: 14px;
+	}
+
+	&__form {
+		display: flex;
+	}
+
+	&__input {
+		color: $paragraph-color;
+		font-family: 'Roboto', sans-serif;
+		font-style: italic;
+		font-size: 14px;
+		font-weight: 300;
+		border-width: 1px;
+		border-color: $paragraph-color;
+		border-style: solid;
+		padding: 12px 10px 11px 10px;
+		width: 230px;
+		height: 40px;
+		border-right: none;
+	}
+
+	&__button {
+		font-variant: small-caps;
+		font-weight: 700;
+		font-size: 14px;
+		color: $background-color;
+		background-color: $navigation-text-color;
+		border-width: 0;
+		width: 150px;
+		height: 40px;
+	}
+}
